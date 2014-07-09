@@ -1,0 +1,4 @@
+target: 'target'
+version: 'v2.0.0'
+stamp_dir: 'stamps'
+sejda: '/home/santana/ambiente/sejda/bin/sejda-console'
