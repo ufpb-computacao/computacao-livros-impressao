@@ -1,0 +1,14 @@
+computacao-periodo1-volume1:
+  -
+    book: /home/santana/asciibook/matematica-elementar-livro/releases/matematica-elementar-livro-v2.3.0.pdf
+    stamp: stamps/me.pdf
+  -
+    url: https://github.com/edusantana/introducao-a-ead-livro/releases/download/v1.0.4/introducao-a-ead-livro-v1.0.4.pdf
+    stamp: stamps/iead.pdf
+computacao-periodo1-volume2:
+  -
+    url: https://github.com/edusantana/introducao-a-ead-livro/releases/download/v1.0.4/introducao-a-ead-livro-v1.0.4.pdf
+    stamp: stamps/iead.pdf
+  -
+    book: /home/santana/asciibook/matematica-elementar-livro/releases/matematica-elementar-livro-v2.3.0.pdf
+    stamp: stamps/me.pdf
