@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.0161765"
-     inkscape:cx="735.71429"
-     inkscape:cy="777.14286"
+     inkscape:zoom="0.35"
+     inkscape:cx="238.08936"
+     inkscape:cy="528.21748"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -58,25 +58,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:#999999;fill-opacity:1;stroke:none"
-       id="rect2985-9"
-       width="35.433071"
-       height="90"
-       x="709.49176"
-       y="204.10585" />
-    <text
-       xml:space="preserve"
-       style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-       x="248.8539"
-       y="-718.61847"
-       id="text3755-8"
-       sodipodi:linespacing="125%"
-       transform="matrix(0,1,-1,0,0,0)"><tspan
-         sodipodi:role="line"
-         id="tspan3757-2"
-         x="248.8539"
-         y="-718.61847"
-         style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold">IEAD</tspan></text>
+    <g
+       transform="translate(0.6391101,299.33473)"
+       id="g3902-7">
+      <rect
+         y="24.505039"
+         x="708.85266"
+         height="90"
+         width="35.433071"
+         id="rect2985-9"
+         style="fill:#999999;fill-opacity:1;stroke:none" />
+      <text
+         transform="matrix(0,1,-1,0,0,0)"
+         sodipodi:linespacing="125%"
+         id="text3755-8"
+         y="-717.97937"
+         x="69.253082"
+         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
+         xml:space="preserve"><tspan
+           style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
+           y="-717.97937"
+           x="69.253082"
+           id="tspan3757-2"
+           sodipodi:role="line">IEAD</tspan></text>
+    </g>
   </g>
 </svg>

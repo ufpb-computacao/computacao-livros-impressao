@@ -14,7 +14,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
-   sodipodi:docname="stamp.pdf">
+   sodipodi:docname="stamp.svg">
   <defs
      id="defs4" />
   <sodipodi:namedview
@@ -24,9 +24,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35"
-     inkscape:cx="214.62259"
-     inkscape:cy="797.40138"
+     inkscape:zoom="2.8"
+     inkscape:cx="625.29811"
+     inkscape:cy="59.33052"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -50,7 +50,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,7 +60,7 @@
      id="layer1">
     <g
        id="g3902"
-       transform="translate(0.6391101,-8.0108643e-5)">
+       transform="translate(0.6391101,-1.411438e-4)">
       <rect
          y="24.505039"
          x="708.85266"
@@ -71,11 +71,12 @@
       <text
          transform="matrix(0,1,-1,0,0,0)"
          sodipodi:linespacing="125%"
-         id="text3755"
+         id="text1"
          y="-717.97937"
          x="69.253082"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:label="#text3755"><tspan
            style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
            y="-717.97937"
            x="69.253082"
@@ -83,7 +84,7 @@
            sodipodi:role="line">ME</tspan></text>
     </g>
     <g
-       transform="translate(0.6391101,179.60081)"
+       transform="translate(0.6391101,299.33473)"
        id="g3902-7">
       <rect
          y="24.505039"
@@ -95,11 +96,12 @@
       <text
          transform="matrix(0,1,-1,0,0,0)"
          sodipodi:linespacing="125%"
-         id="text3755-8"
+         id="text2"
          y="-717.97937"
          x="69.253082"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:label="#text3755-8"><tspan
            style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
            y="-717.97937"
            x="69.253082"
@@ -107,7 +109,7 @@
            sodipodi:role="line">ME</tspan></text>
     </g>
     <g
-       transform="translate(0.6391101,359.2017)"
+       transform="translate(0.6391101,598.66953)"
        id="g3902-71">
       <rect
          y="24.505039"
@@ -119,63 +121,16 @@
       <text
          transform="matrix(0,1,-1,0,0,0)"
          sodipodi:linespacing="125%"
-         id="text3755-2"
+         id="text3"
          y="-717.97937"
          x="69.253082"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:label="#text3755-2"><tspan
            style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
            y="-717.97937"
            x="69.253082"
            id="tspan3757-8"
-           sodipodi:role="line">ME</tspan></text>
-    </g>
-    <g
-       transform="translate(0.6391101,538.80259)"
-       id="g3902-1">
-      <rect
-         y="24.505039"
-         x="708.85266"
-         height="90"
-         width="35.433071"
-         id="rect2985-97"
-         style="fill:#999999;fill-opacity:1;stroke:none" />
-      <text
-         transform="matrix(0,1,-1,0,0,0)"
-         sodipodi:linespacing="125%"
-         id="text3755-28"
-         y="-717.97937"
-         x="69.253082"
-         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
-           y="-717.97937"
-           x="69.253082"
-           id="tspan3757-1"
-           sodipodi:role="line">ME</tspan></text>
-    </g>
-    <g
-       transform="translate(0.6391101,718.40345)"
-       id="g3902-2">
-      <rect
-         y="24.505039"
-         x="708.85266"
-         height="90"
-         width="35.433071"
-         id="rect2985-5"
-         style="fill:#999999;fill-opacity:1;stroke:none" />
-      <text
-         transform="matrix(0,1,-1,0,0,0)"
-         sodipodi:linespacing="125%"
-         id="text3755-4"
-         y="-717.97937"
-         x="69.253082"
-         style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
-           style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
-           y="-717.97937"
-           x="69.253082"
-           id="tspan3757-7"
            sodipodi:role="line">ME</tspan></text>
     </g>
     <g
@@ -191,11 +146,12 @@
       <text
          transform="matrix(0,1,-1,0,0,0)"
          sodipodi:linespacing="125%"
-         id="text3755-0"
+         id="text4"
          y="-717.97937"
          x="69.253082"
          style="font-size:18px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Arial;-inkscape-font-specification:Sans"
-         xml:space="preserve"><tspan
+         xml:space="preserve"
+         inkscape:label="#text3755-0"><tspan
            style="font-size:24px;font-weight:bold;fill:#ffffff;-inkscape-font-specification:Arial Bold"
            y="-717.97937"
            x="69.253082"
