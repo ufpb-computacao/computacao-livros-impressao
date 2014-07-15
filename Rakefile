@@ -15,8 +15,11 @@ volumes = YAML.load_file('config/volumes.yml')
 TARGET_DIR = build['target']
 VERSION = build['version']
 SEJDA = build['sejda']
+CACHE_DIR = 'cache'
 
 directory TARGET_DIR
+directory CACHE_DIR
+
 
 CLEAN.include(TARGET_DIR)
 
@@ -36,28 +39,38 @@ namespace "colecao" do
     books_with_stamps = []
 
     livros.each do |livro|
+      cach_path = ''
       copy_path = ''
       if (livro['source']) then
         copy_name = livro['source'].split('/')[-1]
         copy_path = "#{TARGET_DIR}/#{copy_name}"
+        cache_path = "#{CHACHE_DIR}/#{copy_name}"
         file livro['source']
         #desc 'copy from source'
         file copy_path => [TARGET_DIR,livro['source']] do
           cp livro['source'], copy_path
         end
+        file cache_path => [CACHE_DIR,livro['source']] do
+          cp livro['source'], cache_path
+        end
+
       end
       if (livro['url']) then
         copy_name = livro['url'].split('/')[-1]
-        copy_path = "#{TARGET_DIR}/#{copy_name}"
+        copy_path  = "#{TARGET_DIR}/#{copy_name}"
+        cache_path = "#{CACHE_DIR}/#{copy_name}"
         file copy_path => [TARGET_DIR] do
           `wget --output-document=#{copy_path} #{livro['url']}`
+        end
+        file cache_path => [CACHE_DIR] do
+          `wget --output-document=#{cache_path} #{livro['url']}`
         end
       end
 
       livro_with_stamp = copy_path.ext('with_stamp.pdf')
       livro_bookmark = copy_path.ext('bookmark')
 
-      file livro_bookmark => [copy_path] do
+      file livro_bookmark => [copy_path, cache_path] do
         `pdftk #{copy_path} dump_info output #{livro_bookmark}`
       end
 
