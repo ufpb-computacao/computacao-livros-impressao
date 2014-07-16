@@ -12,25 +12,30 @@ GITHUB_REPO = `git config remote.origin.url`.strip.gsub('git@github.com:','').gs
 build = YAML.load_file('config/build.yml')
 volumes = YAML.load_file('config/volumes.yml')
 
-TARGET_DIR = build['target']
+TARGET_DIR = 'target'
+RELEASE_DIR = 'releases'
+CACHE_DIR = 'cache'
 VERSION = build['version']
 SEJDA = build['sejda']
-CACHE_DIR = 'cache'
+
 
 directory TARGET_DIR
 directory CACHE_DIR
-
+directory RELEASE_DIR
 
 CLEAN.include(TARGET_DIR)
-
 
 namespace "colecao" do
 
   desc 'Build coleção'
-  task :build
+  task :build => [TARGET_DIR, CACHE_DIR]
+
+  desc 'Create release files'
+  task :release => [RELEASE_DIR, 'colecao:build']
 
   volumes.each do |name,livros|
     target_volume_file = "#{TARGET_DIR}/#{name}-#{VERSION}.pdf"
+    release_volume_file = "#{RELEASE_DIR}/#{name}-#{VERSION}.pdf"
     desc 'Build volume file'
     file target_volume_file
     desc 'Download all released books'
@@ -39,39 +44,34 @@ namespace "colecao" do
     books_with_stamps = []
 
     livros.each do |livro|
-      cach_path = ''
-      copy_path = ''
+      cache_path = ''
       if (livro['source']) then
         copy_name = livro['source'].split('/')[-1]
-        copy_path = "#{TARGET_DIR}/#{copy_name}"
         cache_path = "#{CHACHE_DIR}/#{copy_name}"
         file livro['source']
-        #desc 'copy from source'
-        file copy_path => [TARGET_DIR,livro['source']] do
-          cp livro['source'], copy_path
-        end
         file cache_path => [CACHE_DIR,livro['source']] do
           cp livro['source'], cache_path
         end
-
       end
       if (livro['url']) then
         copy_name = livro['url'].split('/')[-1]
-        copy_path  = "#{TARGET_DIR}/#{copy_name}"
         cache_path = "#{CACHE_DIR}/#{copy_name}"
-        file copy_path => [TARGET_DIR] do
-          `wget --output-document=#{copy_path} #{livro['url']}`
-        end
         file cache_path => [CACHE_DIR] do
           `wget --output-document=#{cache_path} #{livro['url']}`
         end
+      end
+      copy_path  = "#{TARGET_DIR}/#{copy_name}"
+      file copy_path => [cache_path,TARGET_DIR] do
+        cp cache_path, copy_path
       end
 
       livro_with_stamp = copy_path.ext('with_stamp.pdf')
       livro_bookmark = copy_path.ext('bookmark')
 
-      file livro_bookmark => [copy_path, cache_path] do
-        `pdftk #{copy_path} dump_info output #{livro_bookmark}`
+      file livro_bookmark => [copy_path] do
+        puts "Extraindo info de #{copy_path}\n"
+        `pdftk #{copy_path} dump_data output #{livro_bookmark}`
+        puts "pdftk #{copy_path} dump_data output #{livro_bookmark}"
       end
 
       #desc 'Apply stamp to the book'
@@ -82,7 +82,6 @@ namespace "colecao" do
         `pdftk #{livro_tmp} update_info #{livro_bookmark} output #{livro_with_stamp}`
 
         rm_rf livro_tmp
-
       end
 
 
@@ -96,14 +95,15 @@ namespace "colecao" do
       `#{SEJDA} merge -f #{source_files} -o #{target_volume_file} --addBlanks`
     end
 
-    task :build => target_volume_file
-  end
-
-
-  task :t do
-    volumes.each do |name,livros|
-      puts name
+    file release_volume_file => [target_volume_file] do
+      cp target_volume_file, release_volume_file
     end
+
+
+    task :build => target_volume_file
+
+    task :release => release_volume_file
+
   end
 
   task :stamp do
@@ -115,7 +115,6 @@ namespace "colecao" do
   end
 
   task :merge do
-
     target = "#{TARGET}/computacao-periodo1.pdf"
     sources = []
     livros.each_with_index do |livro, i|
