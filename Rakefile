@@ -47,7 +47,7 @@ namespace "colecao" do
       cache_path = ''
       if (livro['source']) then
         copy_name = livro['source'].split('/')[-1]
-        cache_path = "#{CHACHE_DIR}/#{copy_name}"
+        cache_path = "#{CACHE_DIR}/#{copy_name}"
         file livro['source']
         file cache_path => [CACHE_DIR,livro['source']] do
           cp livro['source'], cache_path
