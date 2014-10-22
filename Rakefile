@@ -28,7 +28,7 @@ CLEAN.include(TARGET_DIR)
 namespace "colecao" do
 
   desc 'Build coleção'
-  task :build => [TARGET_DIR, CACHE_DIR]
+  task :build => ['clean', TARGET_DIR, CACHE_DIR]
 
   desc 'Create release files'
   task :release => [RELEASE_DIR, 'colecao:build']
