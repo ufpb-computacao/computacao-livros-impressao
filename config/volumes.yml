@@ -1,17 +1,47 @@
 computacao-periodo1-volume1:
   -
-    url: https://github.com/edusantana/matematica-elementar-livro/releases/download/v2.3.1/matematica-elementar-livro-v2.3.1.pdf
-    stamp: stamps/1-me.pdf
-  -
-    url: https://github.com/edusantana/introducao-a-ead-livro/releases/download/v1.0.4/introducao-a-ead-livro-v1.0.4.pdf
-    stamp: stamps/2-iead.pdf
+    url: https://github.com/edusantana/matematica-elementar-livro/releases/download/v2.3.5/matematica-elementar-livro-v2.3.5.pdf
 computacao-periodo1-volume2:
   -
-    url: https://github.com/edusantana/introducao-a-computacao-livro/releases/download/v1.0.5/introducao-a-computacao-livro-v1.0.5.pdf
-    stamp: stamps/1-ic.pdf
+    url: https://github.com/edusantana/introducao-a-programacao-livro/releases/download/v1.0.1/introducao-a-programacao-livro-v1.0.1.pdf
   -
-    url: https://github.com/edusantana/fundamentos-socio-historico-da-educacao-livro/releases/download/v1.0.4/fundamentos-socio-historico-da-educacao-livro-v1.0.4.pdf
-    stamp: stamps/2-fshe.pdf
+    url: https://github.com/edusantana/introducao-a-computacao-livro/releases/download/v1.1.0/introducao-a-computacao-livro-v1.1.0.pdf
+computacao-periodo1-volume3:
   -
-    url: https://github.com/edusantana/introducao-a-programacao-livro/releases/download/v1.0.0/introducao-a-programacao-livro-v1.0.0.pdf
-    stamp: stamps/3-ip.pdf
+    source: /home/santana/Dropbox/computacao-producao/uab-livros/1/livro-introducao-a-EAD-prof-hack-ufsc.pdf
+  -
+    url: https://github.com/edusantana/fundamentos-socio-historico-da-educacao-livro/releases/download/v1.0.5/fundamentos-socio-historico-da-educacao-livro-v1.0.5.pdf
+computacao-periodo2-volume1:
+  -
+    url: https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.1.3/calculo-diferencial-e-integral-livro-v1.1.3.pdf
+computacao-periodo2-volume2:
+  -
+    url: https://github.com/edusantana/linguagem-de-programacao-i-livro/releases/download/v1.0.0/linguagem-de-programacao-i-livro-v1.0.0.pdf
+computacao-periodo2-volume3:
+  -
+    source: "/home/santana/Dropbox/computacao-producao/uab-livros/2/Ingles_Instrumental_Volunico.pdf"
+computacao-periodo2-volume4:
+  -
+    url: https://github.com/edusantana/metodologia-do-trabalho-cientifico-livro/releases/download/v1.0.1/metodologia-do-trabalho-cientifico-livro-v1.0.1.pdf
+  -
+    url: https://github.com/edusantana/fundamentos-psicologicos-da-educacao-livro/releases/download/v1.0.0/fundamentos-psicologicos-da-educacao-livro-v1.0.0.pdf
+computacao-periodo3-volume1:
+  -
+    url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.0/matematica-computacional-livro-v1.0.0.pdf
+computacao-periodo3-volume2:
+  - 
+    url: https://github.com/edusantana/introducao-a-arquitetura-de-computadores-livro/releases/download/v0.4.1/introducao-a-arquitetura-de-computadores-livro-v0.4.1.pdf
+  -
+    url: https://github.com/edusantana/estruturas-de-dados-livro/releases/download/v0.3.4/estruturas-de-dados-livro-v0.3.4.pdf
+# computacao-periodo3-volume3:
+#    Matemática Computacional
+#    Introdução à Arquitetura + Estrutura de Dados
+#    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
+computacao-periodo4-volume1:
+  - 
+    url: https://github.com/edusantana/estatistica-livro/releases/download/v0.8.2/estatistica-livro-v0.8.2.pdf
+computacao-periodo4-volume2:
+  -
+    source: /home/santana/Dropbox/computacao-producao/uab-livros/4/Banco_de_Dados_Finalizado_WEB.pdf
+  -
+    source: /home/santana/Dropbox/computacao-producao/uab-livros/4/TADS_banco_dados_II_WEB.pdf

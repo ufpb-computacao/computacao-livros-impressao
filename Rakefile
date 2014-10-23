@@ -4,6 +4,7 @@ require 'find'
 require 'date'
 require 'open3'
 require 'yaml'
+require 'pdf-reader'
 
 task :default => ["colecao:build"]
 
@@ -28,20 +29,25 @@ CLEAN.include(TARGET_DIR)
 namespace "colecao" do
 
   desc 'Build coleção'
-  task :build => ['clean', TARGET_DIR, CACHE_DIR]
+  task :build => [TARGET_DIR, CACHE_DIR]
 
   desc 'Create release files'
   task :release => [RELEASE_DIR, 'colecao:build']
 
+  desc 'Download all released books'
+  multitask 'download'
+  
+  desc 'Imprime quantidade de páginas'
+  task :paginas  
+  
   volumes.each do |name,livros|
     target_volume_file = "#{TARGET_DIR}/#{name}-#{VERSION}.pdf"
     release_volume_file = "#{RELEASE_DIR}/#{name}-#{VERSION}.pdf"
+    
     desc 'Build volume file'
     file target_volume_file
-    desc 'Download all released books'
-    multitask 'download'
-
-    books_with_stamps = []
+    
+    books_after_stamps = []
 
     livros.each do |livro|
       cache_path = ''
@@ -49,90 +55,89 @@ namespace "colecao" do
         copy_name = livro['source'].split('/')[-1]
         cache_path = "#{CACHE_DIR}/#{copy_name}"
         file livro['source']
-        file cache_path => [CACHE_DIR,livro['source']] do
-          cp livro['source'], cache_path
+        file cache_path => [livro['source'],CACHE_DIR] do |t|
+          cp t.prerequisites.first, t.name
         end
       end
       if (livro['url']) then
         copy_name = livro['url'].split('/')[-1]
         cache_path = "#{CACHE_DIR}/#{copy_name}"
-        file cache_path => [CACHE_DIR] do
-          `wget --output-document=#{cache_path} #{livro['url']}`
+        file cache_path => [CACHE_DIR] do |t|
+          `wget --output-document=#{t.name} #{livro['url']}`
         end
       end
       copy_path  = "#{TARGET_DIR}/#{copy_name}"
-      file copy_path => [cache_path,TARGET_DIR] do
-        cp cache_path, copy_path
+      file copy_path => [cache_path,TARGET_DIR] do |t|
+        cp t.prerequisites.first, t.name
       end
 
-      livro_with_stamp = copy_path.ext('with_stamp.pdf')
-      livro_bookmark = copy_path.ext('bookmark')
+      if (livro['stamp']) then
+        livro_with_stamp = copy_path.ext('with_stamp.pdf')
+        livro_bookmark = copy_path.ext('bookmark')
 
-      file livro_bookmark => [copy_path] do
-        puts "Extraindo info de #{copy_path}\n"
-        `pdftk #{copy_path} dump_data output #{livro_bookmark}`
-        puts "pdftk #{copy_path} dump_data output #{livro_bookmark}"
+        file livro_bookmark => [copy_path] do
+          puts "Extraindo info de #{copy_path}\n"
+          `pdftk #{copy_path} dump_data output #{livro_bookmark}`
+          puts "pdftk #{copy_path} dump_data output #{livro_bookmark}"
+        end
+
+        #desc 'Apply stamp to the book'
+        file livro_with_stamp => [copy_path, livro_bookmark ] do
+          livro_tmp = copy_path.ext('tmp.pdf')
+
+          `pdftk #{copy_path} stamp #{livro['stamp']} output #{livro_tmp}`
+          `pdftk #{livro_tmp} update_info #{livro_bookmark} output #{livro_with_stamp}`
+
+          rm_rf livro_tmp
+        end
+        books_after_stamps << livro_with_stamp
+        file target_volume_file => [livro_with_stamp, livro_bookmark]
+      else
+        books_after_stamps << copy_path
+        file target_volume_file => [copy_path]
       end
-
-      #desc 'Apply stamp to the book'
-      file livro_with_stamp => [copy_path, livro_bookmark ] do
-        livro_tmp = copy_path.ext('tmp.pdf')
-
-        `pdftk #{copy_path} stamp #{livro['stamp']} output #{livro_tmp}`
-        `pdftk #{livro_tmp} update_info #{livro_bookmark} output #{livro_with_stamp}`
-
-        rm_rf livro_tmp
-      end
-
-
-      books_with_stamps << livro_with_stamp
-
-      file target_volume_file => [livro_with_stamp, livro_bookmark]
     end
 
     file target_volume_file do
-      source_files = books_with_stamps.join ' '
+      source_files = books_after_stamps.join ' '
       `#{SEJDA} merge -f #{source_files} -o #{target_volume_file} --addBlanks`
     end
 
-    file release_volume_file => [target_volume_file] do
-      cp target_volume_file, release_volume_file
+    file release_volume_file => [target_volume_file] do |t|
+      cp t.prerequisites.first, t.name
     end
+    
+    desc "imprime o número de páginas de #{release_volume_file}"
+    task "#{release_volume_file}_paginas" => release_volume_file do |t|
+      reader = PDF::Reader.new(t.prerequisites.first)
+      puts "#{t.prerequisites.first}: #{reader.page_count} páginas"
+    end
+    task "paginas" => "#{release_volume_file}_paginas"
 
 
     task :build => target_volume_file
-
     task :release => release_volume_file
 
-  end
-
-  task :stamp do
-    livros.each_with_index do |livro, i|
-      source = "#{TARGET}/#{i}/livro.pdf"
-      target = "#{TARGET}/#{i}/livro_with_stamp.pdf"
-      `pdftk #{source} stamp #{livro['stamp']} output #{target}`
-    end
-  end
-
-  task :merge do
-    target = "#{TARGET}/computacao-periodo1.pdf"
-    sources = []
-    livros.each_with_index do |livro, i|
-      sources << "#{TARGET}/#{i}/livro_with_stamp.pdf"
+    task :stamp do
+      livros.each_with_index do |livro, i|
+        source = "#{TARGET}/#{i}/livro.pdf"
+        target = "#{TARGET}/#{i}/livro_with_stamp.pdf"
+        `pdftk #{source} stamp #{livro['stamp']} output #{target}`
+      end
     end
 
-    source_files = sources.join ' '
-    `#{SEJDA} merge -f #{source_files} -o #{target}`
+    task :merge do
+      target = "#{TARGET}/computacao-periodo1.pdf"
+      sources = []
+      livros.each_with_index do |livro, i|
+        sources << "#{TARGET}/#{i}/livro_with_stamp.pdf"
+      end
+
+      source_files = sources.join ' '
+      `#{SEJDA} merge -f #{source_files} -o #{target}`
+    end
   end
 end
-
-
-
-
-
-
-
-
 
 namespace "tag" do
 
