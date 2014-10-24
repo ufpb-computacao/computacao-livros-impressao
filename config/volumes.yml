@@ -1,6 +1,7 @@
 computacao-periodo1-volume1:
   -
     url: https://github.com/edusantana/matematica-elementar-livro/releases/download/v2.3.6/matematica-elementar-livro-v2.3.6.pdf
+# feito
 computacao-periodo1-volume2:
   -
     url: https://github.com/edusantana/introducao-a-programacao-livro/releases/download/v1.0.1/introducao-a-programacao-livro-v1.0.1.pdf
@@ -13,7 +14,8 @@ computacao-periodo1-volume3:
     url: https://github.com/edusantana/fundamentos-socio-historico-da-educacao-livro/releases/download/v1.0.5/fundamentos-socio-historico-da-educacao-livro-v1.0.5.pdf
 computacao-periodo2-volume1:
   -
-    url: https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.1.3/calculo-diferencial-e-integral-livro-v1.1.3.pdf
+    url: https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.2.0/calculo-diferencial-e-integral-livro-v1.2.0.pdf
+# feito
 computacao-periodo2-volume2:
   -
     url: https://github.com/edusantana/linguagem-de-programacao-i-livro/releases/download/v1.0.0/linguagem-de-programacao-i-livro-v1.0.0.pdf
