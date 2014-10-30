@@ -107,7 +107,7 @@ namespace "colecao" do
       cp t.prerequisites.first, t.name
     end
     
-    desc "imprime o número de páginas de #{release_volume_file}"
+#    desc "imprime o número de páginas de #{release_volume_file}"
     task "#{release_volume_file}_paginas" => release_volume_file do |t|
       reader = PDF::Reader.new(t.prerequisites.first)
       puts "#{t.prerequisites.first}: #{reader.page_count} páginas"
