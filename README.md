@@ -17,7 +17,7 @@ que este.
 ### 2º PERÍODO
 - [x] 1. Cálculo Diferencial - `978-85-237-0895-5`
 - [ ] 2. Linguagem de Programação I - `978-85-237-0896-2`
-- [ ] 3. Inglês
+- [x] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf)
 - [ ] 4. Met. Trabalho Científico + Fundamentos Psicológicos - `978-85-237-0897-9`
 
 ### 3º PERÍODO
@@ -27,4 +27,4 @@ que este.
 
 ### 4º PERÍODO
 - [ ] 1. Probabilidade Estatística + compiladores - `978-85-237-0901-3`
-- [ ] 2. Banco de Dados 
+- [x] 2. [Banco de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo4-banco-de-dados-2014-10.pdf)
