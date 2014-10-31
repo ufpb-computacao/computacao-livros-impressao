@@ -5,6 +5,8 @@ Este repositório possui os livros para impressão. Os outros
 repositórios possuem livros que podem estar mais atualizados
 que este.
 
+** CLIQUE NOS LINKS DOS LIVROS PARA BAIXÁ-LOS **
+
 ## 2014-10
 
 ### 1º PERÍODO
