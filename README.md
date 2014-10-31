@@ -10,14 +10,14 @@ que este.
 ## 2014-10
 
 ### 1º PERÍODO
-- [x] 1. [Matemática Elementar](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-matematica-elementar-2014-10.pdf)
-- [x] 2. [Introdução à Computação + Introdução à Programação](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-volume1-2014-10.pdf)
+- [x] 1. [Matemática Elementar](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-matematica-elementar-2014-10.pdf) - 224 páginas
+- [x] 2. [Introdução à Computação + Introdução à Programação](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-volume1-2014-10.pdf) - 256 páginas
 - [ ] 3. Introdução a EaD + Fundamentos Sócio Históricos - `978-85-237-0894-8`
 
 ### 2º PERÍODO
 - [x] 1. Cálculo Diferencial - `978-85-237-0895-5`
 - [ ] 2. Linguagem de Programação I - `978-85-237-0896-2`
-- [x] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf)
+- [x] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf) - 270 páginas
 - [ ] 4. Met. Trabalho Científico + Fundamentos Psicológicos - `978-85-237-0897-9`
 
 ### 3º PERÍODO
@@ -27,4 +27,4 @@ que este.
 
 ### 4º PERÍODO
 - [ ] 1. Probabilidade Estatística + compiladores - `978-85-237-0901-3`
-- [x] 2. [Banco de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo4-banco-de-dados-2014-10.pdf)
+- [x] 2. [Banco de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo4-banco-de-dados-2014-10.pdf) - 210 páginas
