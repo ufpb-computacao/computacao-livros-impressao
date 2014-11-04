@@ -28,4 +28,4 @@ que este.
 ### 4º PERÍODO
 - [ ] 1. Probabilidade Estatística + compiladores - `978-85-237-0901-3`
 - [x] 2. [Banco de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo4-banco-de-dados-2014-10.pdf) - 210 páginas
-- [x] 3. [Didática](https://www.dropbox.com/s/pkfxxd8xlbfhpyy/didatica-ufrpe-vol1-4.pdf?dl=0)
+- [x] 3. [Didática](https://www.dropbox.com/s/pkfxxd8xlbfhpyy/didatica-ufrpe-vol1-4.pdf?dl=0) - 210 páginas (também)
