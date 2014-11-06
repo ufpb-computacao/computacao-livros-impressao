@@ -37,10 +37,12 @@ computacao-periodo3-matematica-computacional:
   -
     url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf
 computacao-periodo3-volume1:
-  - 
-    url: https://github.com/edusantana/introducao-a-arquitetura-de-computadores-livro/releases/download/v0.4.1/introducao-a-arquitetura-de-computadores-livro-v0.4.1.pdf
   -
-    url: https://github.com/edusantana/estruturas-de-dados-livro/releases/download/v0.3.4/estruturas-de-dados-livro-v0.3.4.pdf
+    source: /home/santana/asciibook/colecao/computacao-periodo1-livro/fichas/2014/3-arquitetura-estrutura-dados.pdf
+  - 
+    url: https://github.com/edusantana/introducao-a-arquitetura-de-computadores-livro/releases/download/v1.0.0/introducao-a-arquitetura-de-computadores-livro-v1.0.0.pdf
+  -
+    url: https://github.com/edusantana/estruturas-de-dados-livro/releases/download/v1.0.0/estruturas-de-dados-livro-v1.0.0.pdf
 # computacao-periodo3-volume2:
 
 #    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
