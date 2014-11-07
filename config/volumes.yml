@@ -48,7 +48,7 @@ computacao-periodo3-volume1:
 #    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
 computacao-periodo4-volume1:
   - 
-    url: https://github.com/edusantana/estatistica-livro/releases/download/v0.8.2/estatistica-livro-v0.8.2.pdf
+    url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
   -
     source: /home/santana/asciibook/4/compiladores-livro/releases/tautologico/livro/wip.pdf
 computacao-periodo4-banco-de-dados:
