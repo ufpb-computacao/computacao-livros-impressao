@@ -1,6 +1,8 @@
 computacao-periodo1-matematica-elementar:
   -
     url: https://github.com/edusantana/matematica-elementar-livro/releases/download/v2.3.7/matematica-elementar-livro-v2.3.7.pdf
+  - 
+    isbn: "978-85-237-0900-6"
 # feito
 computacao-periodo1-volume1:
   -
@@ -9,6 +11,8 @@ computacao-periodo1-volume1:
     url: https://github.com/edusantana/introducao-a-programacao-livro/releases/download/v1.0.2/introducao-a-programacao-livro-v1.0.2.pdf
   -
     url: https://github.com/edusantana/introducao-a-computacao-livro/releases/download/v1.1.1/introducao-a-computacao-livro-v1.1.1.pdf
+  - 
+    isbn: "978-85-237-0901-3"
 computacao-periodo1-volume2:
   -
     source: /home/santana/asciibook/colecao/computacao-periodo1-livro/fichas/2014/1/1-iead-fshe.pdf
@@ -16,13 +20,19 @@ computacao-periodo1-volume2:
     url: https://github.com/edusantana/fundamentos-socio-historico-da-educacao-livro/releases/download/v1.0.6/fundamentos-socio-historico-da-educacao-livro-v1.0.6.pdf
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/1/livro-introducao-a-EAD-prof-hack-ufsc.pdf
+  -
+    isbn: "978-85-237-0907-5"
 computacao-periodo2-calculo-diferencial:
   -
     url: https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.2.1/calculo-diferencial-e-integral-livro-v1.2.1.pdf
+  -
+    isbn: "978-85-237-0908-2"
 # feito
 computacao-periodo2-linguagem-programacao-1:
   -
     url: https://github.com/edusantana/linguagem-de-programacao-i-livro/releases/download/v1.0.1/linguagem-de-programacao-i-livro-v1.0.1.pdf
+  -
+    isbn: "978-85-237-0909-9"
 computacao-periodo2-ingles:
   -
     source: "/home/santana/Dropbox/computacao-producao/uab-livros/2/Ingles_Instrumental_Volunico.pdf"
@@ -33,9 +43,13 @@ computacao-periodo2-volume1:
     url: https://github.com/edusantana/metodologia-do-trabalho-cientifico-livro/releases/download/v1.0.2/metodologia-do-trabalho-cientifico-livro-v1.0.2.pdf
   -
     url: https://github.com/edusantana/fundamentos-psicologicos-da-educacao-livro/releases/download/v1.0.1/fundamentos-psicologicos-da-educacao-livro-v1.0.1.pdf
+  -
+    isbn: "978-85-237-0910-5"
 computacao-periodo3-matematica-computacional:
   -
     url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf
+  -
+    isbn: "978-85-237-0911-2"
 computacao-periodo3-volume1:
   -
     source: /home/santana/asciibook/colecao/computacao-periodo1-livro/fichas/2014/3-arquitetura-estrutura-dados.pdf
@@ -43,14 +57,19 @@ computacao-periodo3-volume1:
     url: https://github.com/edusantana/introducao-a-arquitetura-de-computadores-livro/releases/download/v1.0.0/introducao-a-arquitetura-de-computadores-livro-v1.0.0.pdf
   -
     url: https://github.com/edusantana/estruturas-de-dados-livro/releases/download/v1.0.0/estruturas-de-dados-livro-v1.0.0.pdf
+  -
+    isbn: "978-85-237-0899-3"
 # computacao-periodo3-volume2:
 
 #    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
+# isbn: 978-85-237-0912-9
 computacao-periodo4-volume1:
   - 
     url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
   -
     source: /home/santana/asciibook/4/compiladores-livro/releases/tautologico/livro/wip.pdf
+  -
+    isbn: ""
 computacao-periodo4-banco-de-dados:
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/4/Banco_de_Dados_Finalizado_WEB.pdf
@@ -59,3 +78,4 @@ computacao-periodo4-banco-de-dados:
 computacao-periodo4-didatica:
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/4/didatica/didatica-ufrpe-vol1-4.pdf
+4
