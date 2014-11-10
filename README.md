@@ -11,7 +11,7 @@ que este.
 
 ### 1º PERÍODO
 - [x] 1. Matemática Elementar
-- [] 2. [Introdução à Computação + Introdução à Programação](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-volume1-2014-10.pdf) - 256 páginas
+- [x] 2. [Introdução à Computação + Introdução à Programação](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo1-volume1-2014-10.pdf) - 256 páginas
 - [] 3. [Introdução a EaD + Fundamentos Sócio Históricos](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.7/computacao-periodo1-volume2-2014-10.pdf) - 208 páginas
 
 ### 2º PERÍODO
