@@ -15,7 +15,7 @@ que este.
 - [x] 3. [Introdução a EaD + Fundamentos Sócio Históricos]
 
 ### 2º PERÍODO
-- [] 1. [Cálculo Diferencial](https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.2.1/calculo-diferencial-e-integral-livro-v1.2.1.pdf) - 270 páginas
+- [x] 1. [Cálculo Diferencial](https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.2.1/calculo-diferencial-e-integral-livro-v1.2.1.pdf) - 270 páginas
 - [] 2. [Linguagem de Programação I](https://github.com/edusantana/linguagem-de-programacao-i-livro/releases/download/v1.0.1/linguagem-de-programacao-i-livro-v1.0.1.pdf) -  208 páginas
 - [] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf) - 270 páginas
 - [] 4. [Met. Trabalho Científico + Fundamentos Psicológicos](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.8/computacao-periodo2-volume1-2014-10.pdf) - 128 páginas
