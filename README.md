@@ -17,8 +17,8 @@ que este.
 ### 2º PERÍODO
 - [x] 1. [Cálculo Diferencial]
 - [x] 2. [Linguagem de Programação I]
-- [] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf) - 270 páginas
-- [] 4. [Met. Trabalho Científico + Fundamentos Psicológicos](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.8/computacao-periodo2-volume1-2014-10.pdf) - 128 páginas
+- [x] 3. [Inglês](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.2/computacao-periodo2-ingles-2014-10.pdf) - 270 páginas
+- [x] 4. [Met. Trabalho Científico + Fundamentos Psicológicos](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.8/computacao-periodo2-volume1-2014-10.pdf) - 128 páginas
 
 ### 3º PERÍODO
 - [] 1. [Matemática Computacional](https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf) - 166 páginas
