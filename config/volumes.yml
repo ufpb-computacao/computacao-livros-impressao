@@ -19,7 +19,7 @@ computacao-periodo1-volume2:
   -
     url: https://github.com/edusantana/fundamentos-socio-historico-da-educacao-livro/releases/download/v1.0.6/fundamentos-socio-historico-da-educacao-livro-v1.0.6.pdf
   -
-    source: /home/santana/Dropbox/computacao-producao/uab-livros/livro-introducao-a-EAD-prof-hack-ufsc.pdf
+    source: /home/santana/Dropbox/computacao-producao/uab-livros/1/livro-introducao-a-EAD-prof-hack-ufsc.pdf
   -
     isbn: "978-85-237-0907-5"
 computacao-periodo2-calculo-diferencial:
@@ -63,13 +63,13 @@ computacao-periodo3-volume1:
 
 #    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
 # isbn: 978-85-237-0912-9
-computacao-periodo4-volume1:
-  - 
-    url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
-  -
-    source: /home/santana/asciibook/4/compiladores-livro/releases/tautologico/livro/wip.pdf
-  -
-    isbn: ""
+#computacao-periodo4-volume1:
+  #- 
+  #  url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
+  #-
+  #  source: /home/santana/asciibook/4/compiladores-livro/releases/tautologico/livro/wip.pdf
+  #-
+  #  isbn: "978-85-237-0913-6"
 computacao-periodo4-banco-de-dados:
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/4/Banco_de_Dados_Finalizado_WEB.pdf

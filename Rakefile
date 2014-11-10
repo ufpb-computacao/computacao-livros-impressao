@@ -48,9 +48,11 @@ namespace "colecao" do
     file target_volume_file
     
     books_after_stamps = []
+    
 
     livros.each do |livro|
       cache_path = ''
+      copy_name = 'undefined'
       if (livro['source']) then
         copy_name = livro['source'].split('/')[-1]
         cache_path = "#{CACHE_DIR}/#{copy_name}"
@@ -58,13 +60,14 @@ namespace "colecao" do
         file cache_path => [livro['source'],CACHE_DIR] do |t|
           cp t.prerequisites.first, t.name
         end
-      end
-      if (livro['url']) then
+      elsif (livro['url']) then
         copy_name = livro['url'].split('/')[-1]
         cache_path = "#{CACHE_DIR}/#{copy_name}"
         file cache_path => [CACHE_DIR] do |t|
           `wget --output-document=#{t.name} #{livro['url']}`
         end
+      elsif (livro['isbn']) then
+        next
       end
       copy_path  = "#{TARGET_DIR}/#{copy_name}"
       file copy_path => [cache_path,TARGET_DIR] do |t|
