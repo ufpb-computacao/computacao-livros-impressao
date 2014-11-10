@@ -47,7 +47,7 @@ computacao-periodo2-volume1:
     isbn: "978-85-237-0910-5"
 computacao-periodo3-matematica-computacional:
   -
-    url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf
+    url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.2/matematica-computacional-livro-v1.0.2.pdf
   -
     isbn: "978-85-237-0911-2"
 computacao-periodo3-volume1:
@@ -78,4 +78,3 @@ computacao-periodo4-banco-de-dados:
 computacao-periodo4-didatica:
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/4/didatica/didatica-ufrpe-vol1-4.pdf
-4

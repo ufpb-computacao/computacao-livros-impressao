@@ -21,8 +21,8 @@ que este.
 - [x] 4. [Met. Trabalho Científico + Fundamentos Psicológicos]
 
 ### 3º PERÍODO
-- [] 1. [Matemática Computacional](https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf) - 166 páginas
-- [] 2. [Introdução à Arquitetura + Estrutura de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.9/computacao-periodo3-volume1-2014-10.pdf) - 166 páginas (também)
+- [x] 1. [Matemática Computacional](https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.1/matematica-computacional-livro-v1.0.1.pdf) - 166 páginas
+- [x] 2. [Introdução à Arquitetura + Estrutura de Dados](https://github.com/edusantana/computacao-livros-impressao/releases/download/2014-10.9/computacao-periodo3-volume1-2014-10.pdf) - 166 páginas (também)
 - [ ] 3. Fund. Antropo-filosóficos + Ética Profissional  + Pesquisa  Aplicada - `978-85-237-0900-6`
 
 ### 4º PERÍODO
