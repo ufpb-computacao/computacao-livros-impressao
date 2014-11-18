@@ -22,21 +22,21 @@ computacao-periodo1-volume2:
     source: /home/santana/Dropbox/computacao-producao/uab-livros/1/livro-introducao-a-EAD-prof-hack-ufsc.pdf
   -
     isbn: "978-85-237-0907-5"
-computacao-periodo2-calculo-diferencial:
+computacao-p2-calculo-diferencial:
   -
     url: https://github.com/edusantana/calculo-diferencial-e-integral-livro/releases/download/v1.2.2/calculo-diferencial-e-integral-livro-v1.2.2.pdf
   -
     isbn: "978-85-237-0908-2"
 # feito
-computacao-periodo2-linguagem-programacao-1:
+computacao-p2-linguagem-programacao-1:
   -
     url: https://github.com/edusantana/linguagem-de-programacao-i-livro/releases/download/v1.0.2/linguagem-de-programacao-i-livro-v1.0.2.pdf
   -
     isbn: "978-85-237-0909-9"
-computacao-periodo2-ingles:
+computacao-p2-ingles:
   -
     source: "/home/santana/Dropbox/computacao-producao/uab-livros/2/Ingles_Instrumental_Volunico.pdf"
-computacao-periodo2-volume1:
+computacao-p2-v1-metodologia-fpe:
   -
     source: /home/santana/asciibook/colecao/computacao-periodo1-livro/fichas/2014/2-mtc-fpe.pdf
   -
@@ -47,7 +47,7 @@ computacao-periodo2-volume1:
     isbn: "978-85-237-0910-5"
 computacao-periodo3-matematica-computacional:
   -
-    url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.2/matematica-computacional-livro-v1.0.2.pdf
+    url: https://github.com/edusantana/matematica-computacional-livro/releases/download/v1.0.4/matematica-computacional-livro-v1.0.4.pdf
   -
     isbn: "978-85-237-0911-2"
 computacao-periodo3-volume1:
@@ -63,13 +63,16 @@ computacao-periodo3-volume1:
 
 #    Fund. Antropo-filosóficos + Ética Profissional + Pesquisa Aplicada
 # isbn: 978-85-237-0912-9
-#computacao-periodo4-volume1:
-  #- 
-  #  url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
-  #-
-  #  source: /home/santana/asciibook/4/compiladores-livro/releases/tautologico/livro/wip.pdf
-  #-
-  #  isbn: "978-85-237-0913-6"
+computacao-p4-v1-estatistica-compiladores:
+# falta atualizar ficha com assuntos de compiladores
+-
+  source: /home/santana/asciibook/colecao/computacao-periodo1-livro/fichas/2014/4-estatistica-compiladores.pdf
+- 
+  url: https://github.com/edusantana/estatistica-livro/releases/download/v1.0.0/estatistica-livro-v1.0.0.pdf
+-
+  source: /home/santana/asciibook/4/compiladores-livro/releases/compiladores-livro-v1.0.0.pdf
+-
+  isbn: "978-85-237-0913-6"
 computacao-periodo4-banco-de-dados:
   -
     source: /home/santana/Dropbox/computacao-producao/uab-livros/4/Banco_de_Dados_Finalizado_WEB.pdf
